@@ -1,0 +1,35 @@
+#If there's no wall go south
+0 ***x -> S 0
+
+# If there's a wall on south, go w
+0 x**S -> W 1
+
+# Continue go W
+1 xxxS -> W 1
+
+# If you're at xxWS go back East
+1 xxWS -> E 2
+
+# Continue go E
+2 *x** -> E 2
+
+# If you're at xExS go N
+2 xEx* -> N 3
+
+# Go West at xExx
+3 xExx -> W 4
+
+# Continue go W
+4 xxxx -> W 4
+
+# If you're at xxwx go N
+4 xxWx -> N 5
+
+# Repeat 2
+5 **W* -> E 2
+
+
+
+
+
+

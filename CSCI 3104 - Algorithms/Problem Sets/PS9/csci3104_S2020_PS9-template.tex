@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{xcolor}
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+
+\setlength{\headsep}{36pt}
+
+\begin{document}
+
+\lhead{{\bf CSCI 3104, Algorithms \\ Problem Set 9 -- Due Fri Apr 10 11:55pm} }
+\rhead{Name: \fbox{\phantom{A really long name}} \\ ID: \fbox{\phantom{A reasonable ID}} \\ {\bf Profs.\ Chen \& Grochow \\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\textit{Advice 1}:\ For every problem in this class, you must justify your answer:\ show how you arrived at it and why it is correct. If there are assumptions you need to make along the way, state those clearly.
+
+\vspace{-3mm} 
+\textit{Advice 2}:\ Informal reasoning is typically insufficient for full credit. Instead, write a logical argument, in the style of a mathematical proof.
+
+\textbf{Instructions for submitting your solutions}:
+\vspace{-5mm} 
+
+\begin{itemize}
+	\item All submissions must be typed.
+	\item You should submit your work through the \href{https://canvas.colorado.edu/courses/59906}{\textbf{class Canvas page}} only.
+	\item You may not need a full page for your solutions; pagebreaks are there to help Gradescope automatically find where each problem is. Even if you do not attempt every problem, please allot at least as many pages per problem (or subproblem) as are allotted in this template.
+%	\item For drawing graphs, you may include scans of hand-drawn graphs into your PDF file. \textbf{However, the rest of your solution (including the explanation of the graph) must be typed. If your words are not typed, you will get a 0 for that part of the question.}
+\end{itemize}
+
+Quicklinks: \ref{1a} \ref{1b} \ref{1c}  \ref{2a} \ref{2b}
+\vspace{-4mm} 
+\end{small}
+
+
+\hrulefill
+
+\newpage
+
+\begin{enumerate}
+
+\item \label{1} Could dynamic programming be applied to give an efficient solution to the following problems? Justify your answer in terms of the optimal substructure property on the overlapping sub-problems. Even if you think the answer is yes, you do not need to give an algorithm; the question is \emph{not} ``show us how to solve it using DP'', it is ``give an argument as to whether DP is a reasonable approach to try here.''
+
+\begin{enumerate}
+\item \label{1a} List maximum.
+
+\textit{Input:} List $L$ of numbers.
+
+\textit{Output:} The maximum element in the list.
+
+%YOUR ANSWER HERE
+\pagebreak
+
+\item \label{1b} Rod cutting.
+
+\textit{Input:} A list of values $v_1, \dotsc, v_n$ for rods of length $1, \dotsc, n$, respectively. 
+
+\textit{Goal:} Divide a rod of length $n$ into pieces of lengths $\ell_1, \dotsc, \ell_k$ ($k$ can vary) to maximize the total value $\sum_{i=1}^{k} v_{\ell_i}$.
+
+\textit{Note:} While this problem is discussed on GeeksForGeeks (and elsewhere), the explanation of optimal substructure on GeeksForGeeks, while not incorrect, is not sufficient explanation to demonstrate mastery of this question.
+
+%YOUR ANSWER HERE
+\pagebreak
+
+\item \label{1c} Graph 3-coloring. 
+
+\textit{Input:} A simple, undirected graph $G$.
+
+\textit{Goal:} Decide whether one can assign the colors $\{R,G,B\}$ to the vertices of $G$ in such a way that no two neighbors get the same color.
+
+\textit{Hint:} You may find the notion of {\color{blue} \href{https://en.wikipedia.org/wiki/Critical_graph}{\underline{critical graph}}} useful.
+
+%YOUR ANSWER HERE
+\pagebreak
+
+\end{enumerate}
+
+\item \label{2} Write down the recurrence for the optimal solution for each of the following problems. Justify your answer.
+
+\begin{enumerate}
+\item \label{2a} Social distancing gold-panning. Imagine a river network in which your team can pan for gold, but no two of you can stand in adjacent positions. You have some idea of the expected amount $w(v)$ of gold you will find at each location $v$, but must decide in which locations your team should look.
+
+\textit{Input:} A rooted tree $T$, with root vertex $r \in V(T)$, and vertex weights $w\colon V(T) \to \mathbb{R}_{\geq 0}$
+
+\text{Output:} A subset of vertices $P \subseteq V(T)$ such that no two vertices in $P$ are adjacent, and maximizing the value $\sum_{v \in P} w(v)$.
+
+% YOUR ANSWER HERE
+\pagebreak
+
+\item \label{2b} Counting Knapsack. Here, we are considering the knapsack problem, but rather than returning the value of the optimum knapsack, or the optimum knapsack set, we are asking for the \emph{number} of different optimum knapsacks (which all therefore have the same value).
+
+\textit{Input:} A list $L = [(w_1, v_1), \dotsc, (w_n, v_n)]$, and a threshold weight $W$.
+
+\textit{Output:} The count of max-value knapsacks. A max-value knapsack is a subset $S \subseteq \{1,\dotsc,n\}$ such that (1) $\sum_{i \in S} w_i \leq W$, and (2) the value $\sum_{i \in S} v_i$ is maximum among all subsets satisfying (1). The output should be \emph{how many} different optimal solutions $S$ there are.
+
+For instance, if $L = [(1,1), (1,2), (2,2), (2,3)]$ and $W = 2$, then the output would be 2, because there are two optimal solutions: taking either the first two items or the very last item results in a valid knapsack of value 3. (Note that this is \emph{not} just the total number of valid knapsacks; in this case there is a third set that fits within the weight threshold, namely the singleton $\{(2,2)\}$, but that set does not have optimal value.)
+
+% YOUR ANSWER HERE
+\pagebreak
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{document}
+
+

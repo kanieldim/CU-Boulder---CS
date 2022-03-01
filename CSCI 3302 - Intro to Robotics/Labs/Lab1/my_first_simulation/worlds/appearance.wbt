@@ -1,0 +1,122 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9946467280983557 0.09473352681466145 0.04127281406072698 0.6360866556245244
+  position 0.17959799477817515 1.1994499556845737 1.7510885499330253
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation 0.29318 0.05 0.17833
+  rotation 0 -1 0 1.047195307179586
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.212715 0.05 -0.269646
+  rotation 0 1 0 3.14159
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  translation 0.101604 -3.19739e-05 -0.0270751
+  rotation 0.00019737230086728022 0.9999998600770219 -0.0004908055737579646 2.368687511695305
+  controller "epuck_go_foward"
+}
+DEF Ball Solid {
+  translation -0.131787 0.2 -0.00449056
+  children [
+    DEF BALL_GEOMETRY Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/red_brick_wall.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+DEF Wall1 Solid {
+  translation 0.5 0.05 0
+  children [
+    DEF BLUE_WALL Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.333333 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.1 0.98
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject DEF BLUE_WALL Box {
+    size 0.02 0.1 0.98
+  }
+}
+DEF Wall2 Solid {
+  translation -0.5 0.05 0
+  children [
+    DEF BLUE_WALL Shape {
+      appearance DEF BLUE_WALL PBRAppearance {
+        baseColor 0 0.333333 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.1 0.98
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF Wall3 Solid {
+  translation 0 0.05 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.333333 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.98 0.1 0.02
+      }
+    }
+  ]
+  name "solid(3)"
+}
+DEF Wall4 Solid {
+  translation 0 0.05 -0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.333333 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.98 0.1 0.02
+      }
+    }
+  ]
+  name "solid(4)"
+}

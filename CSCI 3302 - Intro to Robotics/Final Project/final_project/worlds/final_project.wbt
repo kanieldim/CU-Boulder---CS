@@ -1,0 +1,461 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.9999937422103903 0.002503116505540253 0.002499989563839737 4.713632722580364
+  position 0.00030515599005201106 4.887115338026307 3.501303348962256e-06
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "textures/desktop_wood.jpg"
+      ]
+      filtering 0
+    }
+    metalness 0
+  }
+}
+DEF EPUCK E-puck {
+  translation 0.375646 0 -0.701572
+  controller "csci3302_final_base"
+  supervisor TRUE
+}
+DEF wall_type1 Solid {
+  translation 0.714217 0 -0.225696
+  rotation 0 1 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1.2 0.1 0.05
+      }
+    }
+  ]
+}
+DEF wall_type1 Solid {
+  translation 0.125069 0 0.778704
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF wall_type1 Solid {
+  translation 0.125823 0 0.603768
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(10)"
+}
+DEF wall_type1 Solid {
+  translation 0.501847 0 -0.22739
+  rotation 0 1 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1.2 0.1 0.05
+      }
+    }
+  ]
+  name "solid(8)"
+}
+DEF wall_type1 Solid {
+  translation -0.224465 0 0.380184
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.4 0.1 0.05
+      }
+    }
+  ]
+  name "solid(12)"
+}
+DEF wall_type1 Solid {
+  translation 0.0250297 0 0.182984
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.4 0.1 0.05
+      }
+    }
+  ]
+  name "solid(26)"
+}
+DEF wall_type1 Solid {
+  translation -0.478002 0 0.20021
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.4 0.1 0.05
+      }
+    }
+  ]
+  name "solid(25)"
+}
+DEF wall_type1 Solid {
+  translation -0.00239365 0 -0.263265
+  rotation 0 -1 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.6 0.1 0.05
+      }
+    }
+  ]
+  name "solid(24)"
+}
+DEF wall_type1 Solid {
+  translation -0.0037303 0 -0.509175
+  rotation 0 -1 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.6 0.1 0.05
+      }
+    }
+  ]
+  name "solid(22)"
+}
+DEF wall_type1 Solid {
+  translation -0.00273315 0 -0.79589
+  rotation 0 -1 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.6 0.1 0.05
+      }
+    }
+  ]
+  name "solid(17)"
+}
+DEF wall_type2 Solid {
+  translation 0.798902 0 -0.800513
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.12 0.1 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF wall_type2 Solid {
+  translation 0.946097 0 -0.633897
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.12 0.1 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+}
+DEF wall_type3 Solid {
+  translation 0.613718 0 0.353538
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(4)"
+}
+DEF wall_type3 Solid {
+  translation -0.27848 0 -0.646882
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(7)"
+}
+DEF wall_type3 Solid {
+  translation -0.769742 0 0.159461
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.9 0.1 0.05
+      }
+    }
+  ]
+  name "solid(15)"
+}
+DEF wall_type3 Solid {
+  translation -0.522778 0 -0.651932
+  rotation 0 1 0 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(21)"
+}
+DEF wall_type3 Solid {
+  translation -0.880107 0 0.584307
+  rotation 0 1 0 -3.1415853071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(20)"
+}
+DEF wall_type3 Solid {
+  translation -0.621363 0 -0.265821
+  rotation 0 1 0 -3.1415853071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(19)"
+}
+DEF wall_type3 Solid {
+  translation -0.128214 2.22045e-16 -0.0244681
+  rotation 0 -1 0 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.75 0.1 0.05
+      }
+    }
+  ]
+  name "solid(14)"
+}
+DEF wall_type3 Solid {
+  translation -0.622327 0 -0.799089
+  rotation 0 -1 0 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(23)"
+}
+DEF wall_type3 Solid {
+  translation -0.748248 0 -0.502893
+  rotation 0 -1 0 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.1 0.05
+      }
+    }
+  ]
+  name "solid(16)"
+}
+DEF wall_type3 Solid {
+  translation -0.625105 0 0.778173
+  rotation 0 1 0 3.14159
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(13)"
+}
+DEF wall_type3 Solid {
+  translation 0.272756 0 -0.362856
+  rotation 0 -1 0 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(27)"
+}
+DEF wall_type3 Solid {
+  translation 0.860582 0 -0.246777
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.3 0.1 0.05
+      }
+    }
+  ]
+  name "solid(18)"
+}
+DEF wall_type3 Solid {
+  translation 0.394851 0 0.352892
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.1 0.05
+      }
+    }
+  ]
+  name "solid(6)"
+}
+DEF wall_type2 Solid {
+  translation -0.474585 7.77156e-16 0.696133
+  rotation 0 -1 0 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.14 0.1 0.05
+      }
+    }
+  ]
+  name "solid(9)"
+}
+DEF wall_type2 Solid {
+  translation 0.724925 7.77156e-16 0.90262
+  rotation 0 -1 0 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.2 0.1 0.05
+      }
+    }
+  ]
+  name "solid(5)"
+}
+DEF wall_type2 Solid {
+  translation 0.939698 7.77156e-16 0.354284
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.12 0.1 0.05
+      }
+    }
+  ]
+  name "solid(11)"
+}
+DEF wall_type2 Solid {
+  translation 0.940529 7.77156e-16 0.0790633
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.12 0.1 0.05
+      }
+    }
+  ]
+  name "solid(29)"
+}
+DEF wall_type2 Solid {
+  translation 0.799365 7.77156e-16 -0.459768
+  rotation 0 1 0 3.141592653589793
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.12 0.1 0.05
+      }
+    }
+  ]
+  name "solid(28)"
+}
+DEF GOALLLLL Solid {
+  translation 0.6 0 0
+  scale 0.1 0.1 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        metalness 0
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "Goal"
+}

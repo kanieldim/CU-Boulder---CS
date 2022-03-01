@@ -1,0 +1,482 @@
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have passed the puzzle!
+Used 5 bullets!
+Food improved by: 41
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-23 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 816  |  bullets : 1910  |  cash : 208.125  |  
+
+
+
+
+1847-04-23
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+You have passed the puzzle!
+Used 10 bullets!
+Food improved by: 2
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+You got lucky! You encountered a bear!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-24 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 808  |  bullets : 1900  |  cash : 208.125  |  
+
+
+
+
+
+1847-04-24
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-25 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 798  |  bullets : 1900  |  cash : 208.125  |  
+
+
+
+
+1847-04-25
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-26 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 788  |  bullets : 1900  |  cash : 208.125  |  
+
+Unfortunately, you have encountered bad weather.
+Resting 5 days because of hurricane.
+There has been an attack from the riders!
+You have three choices:
+1. Run	2. Attack	3. Surrender: 3
+You have surrendered! You have lost a quarter of your cash reserves.
+
+
+
+1847-05-01
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have passed the puzzle!
+Used 8 bullets!
+Food improved by: 5
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-02 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 708  |  bullets : 1892  |  cash : 156.09375  |  
+
+
+
+
+1847-05-02
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-03 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 698  |  bullets : 1892  |  cash : 156.09375  |  
+
+
+
+
+
+1847-05-03
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-04 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 688  |  bullets : 1892  |  cash : 156.09375  |  
+
+Unfortunately, One of the oxen is dead. Remaining oxen = 8
+There has been an attack from the riders!
+You have three choices:
+1. Run	2. Attack	3. Surrender: 3
+You have surrendered! You have lost a quarter of your cash reserves.
+1847-05-04
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+You have passed the puzzle!
+Used 10 bullets!
+Food improved by: 2
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-05 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 680  |  bullets : 1882  |  cash : 117.0703125  |  
+
+
+
+
+1847-05-05
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-06 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 670  |  bullets : 1882  |  cash : 117.0703125  |  
+
+
+
+
+1847-05-06
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 5
+3 try! Your guess?: 7
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-07 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 660  |  bullets : 1882  |  cash : 117.0703125  |  
+
+
+
+
+1847-05-07
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-08 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 650  |  bullets : 1882  |  cash : 117.0703125  |  
+
+There has been an attack from the riders!
+You have three choices:
+1. Run	2. Attack	3. Surrender: 3
+You have surrendered! You have lost a quarter of your cash reserves.
+
+
+
+1847-05-08
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-09 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 640  |  bullets : 1882  |  cash : 87.802734375  |  
+
+Unfortunately, One member of the travelling party got sick. The possible diseases are: typhoid, cholera, diarrhea, measles, dysentery (of course), and fever.
+
+
+
+1847-05-09
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well1
+p2 has recovered completely. Health back to 100%
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-10 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 630  |  bullets : 1882  |  cash : 87.802734375  |  
+
+
+
+
+
+1847-05-10
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-11 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 620  |  bullets : 1882  |  cash : 87.802734375  |  
+
+
+
+
+
+1847-05-11
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a deer!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+You have passed the puzzle!
+Used 5 bullets!
+Food improved by: 41
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-12 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 651  |  bullets : 1877  |  cash : 87.802734375  |  
+
+Unfortunately, One member of the travelling party got sick. The possible diseases are: typhoid, cholera, diarrhea, measles, dysentery (of course), and fever.
+
+
+
+1847-05-12
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a bear!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+p4 has recovered completely. Health back to 100%
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-13 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 641  |  bullets : 1877  |  cash : 87.802734375  |  
+
+
+
+
+1847-05-13
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+You got lucky! You encountered a deer!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-14 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 631  |  bullets : 1877  |  cash : 87.802734375  |  
+
+
+
+
+1847-05-14
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+You got lucky! You encountered a deer!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-15 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 621  |  bullets : 1877  |  cash : 87.802734375  |  
+
+
+
+
+
+1847-05-15
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have FAILED the puzzle!
+Failed the puzzle! Hunt opportunity missed. Moving on!
+You got lucky! You encountered a fox!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+You have passed the puzzle!
+Used 8 bullets!
+Food improved by: 5
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-16 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 616  |  bullets : 1869  |  cash : 87.802734375  | 
+
+
+
+
+
+1847-05-16
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+You got lucky! You encountered a rabbit!
+Do you want to hunt?: 1. YES, 2. NO 1
+You must solve a puzzle in order to hunt!
+----welcome to the puzzle!-----
+In order to pass this puzzle, you must correctly guess a number between 1 to 10. You will be given atmost 3 tries. Good luck!
+1 try! Your guess?: 3
+2 try! Your guess?: 4
+3 try! Your guess?: 6
+You have passed the puzzle!
+Used 10 bullets!
+Food improved by: 2
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-17 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 608  |  bullets : 1859  |  cash : 87.802734375  |  
+
+
+
+
+
+1847-05-17
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 3
+You have chosen to hunt!
+How well do you want to eat?
+1. Poorly	2. Moderately	3. Well 1
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-05-18 00:00:00  |  miles_travelled : 0  |  next_landmark : 102  |  food : 598  |  bullets : 1859  |  cash : 87.802734375  |  
+
+
+
+
+

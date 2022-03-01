@@ -1,0 +1,183 @@
+[debug] Acquiring lock on file C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\project\target\.sbt-compilation-infos\submission-compile\.sbt-idea-lock ...
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:2:12: object scalatest is not a member of package org
+[error] import org.scalatest.FunSuite
+[error]            ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:5:28: not found: type FunSuite
+[error] class CompilerTest extends FunSuite {
+[error]                            ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:6:5: not found: value test
+[error]     test ("simple expression 1") {
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:7:17: not found: value Const
+[error]         val e = Const(1.0)
+[error]                 ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:10:38: not found: type Expr
+[error]     def compileToStackMachineCode(e: Expr): List[StackMachineInstruction] = {
+[error]                                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:15:5: not found: value test
+[error]     test("simple expression 2") {
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:16:17: not found: value Plus
+[error]         val e = Plus(Const(1.0), Const(2.5))
+[error]                 ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:16:22: not found: value Const
+[error]         val e = Plus(Const(1.0), Const(2.5))
+[error]                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:16:34: not found: value Const
+[error]         val e = Plus(Const(1.0), Const(2.5))
+[error]                                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:24:5: not found: value test
+[error]     test("simple expression 3"){
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:17: not found: value Minus
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                 ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:23: not found: value Plus
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                       ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:28: not found: value Const
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                            ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:40: not found: value Const
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                        ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:53: not found: value Mult
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:58: not found: value Const
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                          ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:25:70: not found: value Const
+[error]         val e = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:33:5: not found: value test
+[error]     test("simple expression 4") {
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:18: not found: value Minus
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:24: not found: value Plus
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                        ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:29: not found: value Const
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                             ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:41: not found: value Const
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                         ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:54: not found: value Mult
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:59: not found: value Const
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                           ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:34:71: not found: value Const
+[error]         val e1 = Minus(Plus(Const(1.5), Const(2.4)), Mult(Const(2.5), Const(2.5)))
+[error]                                                                       ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:35:18: not found: value Plus
+[error]         val e2 = Plus(Const(1.0), Const(2.5))
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:35:23: not found: value Const
+[error]         val e2 = Plus(Const(1.0), Const(2.5))
+[error]                       ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:35:35: not found: value Const
+[error]         val e2 = Plus(Const(1.0), Const(2.5))
+[error]                                   ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:36:18: not found: value Log
+[error]         val e3 = Log(Plus(Exp(e1), Exp(e2)))
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:36:22: not found: value Plus
+[error]         val e3 = Log(Plus(Exp(e1), Exp(e2)))
+[error]                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:36:27: not found: value Exp
+[error]         val e3 = Log(Plus(Exp(e1), Exp(e2)))
+[error]                           ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\CompilerTest.scala:36:36: not found: value Exp
+[error]         val e3 = Log(Plus(Exp(e1), Exp(e2)))
+[error]                                    ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:17: not found: value Plus
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                 ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:22: not found: value Log
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:26: not found: value Plus
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                          ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:31: not found: value Const
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                               ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:43: not found: value Mult
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                                           ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:48: not found: value Const
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                                                ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:60: not found: value Exp
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                                                            ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:64: not found: value Const
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                                                                ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:6:80: not found: value Const
+[error]         val e = Plus(Log(Plus(Const(1.0), Mult(Const(3.0), Exp(Const(4.1))))), Const(1.0))
+[error]                                                                                ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:15:18: not found: value Minus
+[error]         val e1 = Minus(Const(2.0), Minus(Const(3.0), Const(5.0)))
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:15:24: not found: value Const
+[error]         val e1 = Minus(Const(2.0), Minus(Const(3.0), Const(5.0)))
+[error]                        ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:15:36: not found: value Minus
+[error]         val e1 = Minus(Const(2.0), Minus(Const(3.0), Const(5.0)))
+[error]                                    ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:15:42: not found: value Const
+[error]         val e1 = Minus(Const(2.0), Minus(Const(3.0), Const(5.0)))
+[error]                                          ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\Main.scala:15:54: not found: value Const
+[error]         val e1 = Minus(Const(2.0), Minus(Const(3.0), Const(5.0)))
+[error]                                                      ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:12:18: not found: value Const
+[error]             case Const(n) => { List(PushI(n)) }
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:13:18: not found: value Plus
+[error]             case Plus(e1, e2) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:19:18: not found: value Minus
+[error]             case Minus(e1, e2) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:25:18: not found: value Mult
+[error]             case Mult(e1, e2) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:31:18: not found: value Div
+[error]             case Div(e1, e2) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:37:18: not found: value Exp
+[error]             case Exp(e) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:41:18: not found: value Log
+[error]             case Log(e) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:45:18: not found: value Sine
+[error]             case Sine(e) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineCompiler.scala:49:18: not found: value Cosine
+[error]             case Cosine(e) => {
+[error]                  ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineTest.scala:3:12: object scalatest is not a member of package org
+[error] import org.scalatest.FunSuite
+[error]            ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineTest.scala:5:32: not found: type FunSuite
+[error] class StackMachineTest extends FunSuite {
+[error]                                ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineTest.scala:6:5: not found: value test
+[error]     test("stack machine test 1") {
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineTest.scala:12:5: not found: value test
+[error]     test("stack machine test 2") {
+[error]     ^
+[error] C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\StackMachineTest.scala:18:5: not found: value test
+[error]     test("stack machine test 5") {
+[error]     ^
+[error] 60 errors found
+[debug] Releasing lock on file C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\project\target\.sbt-compilation-infos\submission-compile\.sbt-idea-lock.

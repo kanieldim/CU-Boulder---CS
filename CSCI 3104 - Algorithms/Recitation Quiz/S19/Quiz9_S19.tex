@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[]{algorithmicx}
+\usepackage{comment}
+\usepackage{tkz-berge}
+\usetikzlibrary{positioning, automata}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{36pt}
+
+\usepackage{hyperref}
+
+
+
+\newcommand{\makenonemptybox}[2]{%
+%\par\nobreak\vspace{\ht\strutbox}\noindent
+\item[]
+\fbox{% added -2\fboxrule to specified width to avoid overfull hboxes
+% and removed the -2\fboxsep from height specification (image not updated)
+% because in MWE 2cm is should be height of contents excluding sep and frame
+\parbox[c][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
+  \hrule width \hsize height 0pt
+  #2
+ }%
+}%
+\par\vspace{\ht\strutbox}
+}
+\makeatother
+
+\begin{document}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+\lhead{{\bf CSCI 3104, Algorithms \\ Quiz 9 Q2 S19} }
+\rhead{Name: \fbox{\phantom{This is a really long name}} \\ ID: \fbox{\phantom{This is a student ID}} \\ {\bf Profs.\ Chen \& Grochow\\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\noindent \textbf{Instructions:} This quiz is open book and open note. You \textbf{may} post clarification questions to Piazza, with the understanding that you may not receive an answer in time and posting does count towards your time limit (30 min for 1x, 37.5 min for 1.5x, 45 min for 2x). Questions posted to Piazza \textbf{must be posted as PRIVATE QUESTIONS.} Other use of the internet, including searching for answers or posting to sites like Chegg, is strictly prohibited. Violations of these grounds to receive a 0 on this quiz. Proofs should be written in \textbf{complete sentences.} \textbf{Show and justify all work to receive full credit.}
+\end{small} 
+
+\hrulefill 
+
+\noindent  \textbf{Standard 19.} We define the \textsf{Multiplicative Rod Cutting} problem as follows.
+
+\textit{Input:} A list of weights $w_1, \dotsc, w_n \geq 1$ for rods of length $1, \dotsc, n$, respectively. 
+
+\textit{Goal:} Divide a rod of length $n$ into pieces of lengths $\ell_1, \dotsc, \ell_k$ ($k$ can vary) to maximize the total value $\prod_{i=1}^{k} w_{\ell_i}$. You may assume that a rod of length $0$ has weight $1$.
+
+\noindent Write down the recurrence for the optimal solution. Justify your answer.
+
+
+\end{document}
+
+

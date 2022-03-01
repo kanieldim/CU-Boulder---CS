@@ -1,0 +1,37 @@
+What is your name?: Joe
+Please enter the names of your companions below:
+1 : Jane
+2 : Jim
+3 : Joan
+4 : Jenn
+
+You are starting at mile: 0.
+There are 2040 that you must travel to reach your destination.
+Before the start of your trip, you can visit the store and buy supplies: food, oxen, bullets and wagon parts. Would you like to visit the store? Y / N n
+Your departure date currently is: 1847-03-28. Would you like to change it? Y / N n
+The final date of departure is: 1847-03-28
+You must reach the Oregon City by 1847-11-30
+
+
+Let the journey begin!
+
+
+
+
+1847-03-28
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit2
+You have chosen to travel for 2 weeks. You will be traveling: 0.0 miles. Food will be consumed accordingly.
+-----------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-11 00:00:00  |  miles_travelled : 0.0  |  next_landmark : 102  |  food : -210  |  bullets : 0  |  cash : 1600  |  
+
+There has been an attack from the riders!
+You have three choices:
+1. Run	2. Attack	3. Surrender: 3
+You have surrendered! You have lost a quarter of your cash reserves.
+The player has ran out of food.
+The player has ran out of oxen.
+Sorry, you did not reach Oregon City.
+
+
+

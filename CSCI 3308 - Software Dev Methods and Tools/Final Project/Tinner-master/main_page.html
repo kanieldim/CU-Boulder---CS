@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        	<meta charset="utf-8">
+        	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        	<meta name="viewport" content="width=device-width, initial-scale=1">
+        	<title>Tinner</title>
+        	<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        	<link rel="stylesheet" type="text/css" href="main_page.css">
+        	<script type="text/javascript" src="./main_page.js"></script>
+    </head>
+
+      <body>
+        <div class="container">
+          <div class="topnav">
+            <img src="./tinner-logo4.png" style="float:left" alt="Tinner Logo" width="170" height="52">
+            <a style="float:right" class="active" href="#home">Sign Up</a>
+            <a style="float:right" href="#news">Login</a>
+            <a style="float:right" href="#contact">Food Options</a>
+            <a style="float:right" href="#about">Home</a>
+          </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="tinner-icon">
+            <img src="./tinner-icon.png" alt="Tinner Icon" width="120" height="120">
+          </div>
+      		<div class="text-center">
+      			<h1>Welcome to Tinner!</h1>
+      			<p style = "font-family: Varela round,serif;font-style:bold" class="text-white">Stuck on what to eat?
+              This website will allow you to easily pick a recipe for breakfast, lunch, or dinner!</p>
+      		</div>
+          <!-- Button to click to show the modals of login or sign up-->
+          <div class="align-center">
+              <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+              <div id="id01" class="modal">
+
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="login_icon.png" alt="Avatar" class="avatar">
+                  </div>
+
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                  </div>
+
+                  <div class="container">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                  </div>
+
+                  <div class="container">
+                    <button type="submit">Login</button>
+                  </div>
+
+                  <div class="container">
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+
+                  </div>
+
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  </div>
+
+                  <div class="container">
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+      	</div>
+
+
+
+    </body>
+    </html>

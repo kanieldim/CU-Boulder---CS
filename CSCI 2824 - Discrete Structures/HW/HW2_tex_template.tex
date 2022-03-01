@@ -1,0 +1,289 @@
+ \documentclass[9pt]{article}
+ 
+ \def\solutions{1}
+
+ \usepackage{amsmath}
+ \usepackage{amssymb}
+ \usepackage{graphicx}    % needed for including graphics e.g. EPS, PS \usepackage{tikz}
+ \usepackage{tikz}
+ \usepackage{tikzsymbols}
+ \usepackage{relsize}
+ \usetikzlibrary{patterns,decorations.pathreplacing,shapes,arrows}
+ \usepackage{algorithm2e}
+ \topmargin -2.5cm        % read Lamport p.163
+ \oddsidemargin -0.04cm   % read Lamport p.163
+ \evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+ \textwidth 16.59cm
+ \textheight 25.94cm
+% \pagestyle{empty}        % Uncomment if don't want page numbers
+ \pagenumbering{gobble}
+ \parskip 7.2pt           % sets spacing between paragraphs
+ %\renewcommand{\baselinestretch}{1.5} 	% Uncomment for 1.5 spacing between lines
+ \parindent 0pt		  % sets leading space for paragraphs
+
+% No date in header
+\date{}
+
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\lb}{\left[}
+\newcommand{\rb}{\right]}
+\newcommand{\ls}{\left\{}
+\newcommand{\rs}{\right\}}
+\newcommand{\lbar}{\left|}
+\newcommand{\rbar}{\right|}
+\newcommand{\ld}{\left.}
+\newcommand{\rd}{\right.}
+
+\newcommand{\myexists}{\exists \hspace{.3mm}}
+
+\newcommand{\hs}{\hspace{.75mm}}
+\newcommand{\bs}{\hspace{-.75mm}}
+\newcommand{\nin}{\noindent}
+
+\newcommand{\fx}{f\bs\left( x \right)}
+\newcommand{\gx}{g\bs\left( x \right)}
+\newcommand{\qx}{q\bs\left( x \right)}
+
+\newcommand{\nn}{\nonumber}
+
+\newcommand{\vfive}{\vspace{5mm}}
+\newcommand{\vthree}{\vspace{3mm}}
+
+\newcommand{\fof}[1]{f\lp #1\rp}
+\newcommand{\gof}[1]{g\lp #1\rp}
+\newcommand{\qof}[1]{q\lp #1\rp}
+
+\newcommand{\myp}[1]{\left( #1 \right)}
+\newcommand{\myb}[1]{\left[ #1 \right]}
+\newcommand{\mys}[1]{\left\{ #1 \right\}}
+\newcommand{\myab}[1]{\left| #1 \right|}
+
+\newcommand{\myj}{_j}
+\newcommand{\myjp}{_{j+1}}
+\newcommand{\myjm}{_{j-1}}
+
+\newcommand{\f}[1]{f\hspace{-1mm}\left( #1 \right)}
+\newcommand{\fp}[1]{f'\hspace{-1mm}\left( #1 \right)}
+\newcommand{\g}[1]{g\hspace{-1mm}\left( #1 \right)}
+\newcommand{\gp}[1]{g'\hspace{-1mm}\left( #1 \right)}
+\newcommand{\q}[1]{q\hspace{-1mm}\left( #1 \right)}
+\newcommand{\qp}[1]{q'\hspace{-1mm}\left( #1 \right)}
+\newcommand{\Px}[1]{P\hspace{-1mm}\left( x_{#1} \right)}
+\newcommand{\Qx}[1]{Q\hspace{-1mm}\left( x_{#1} \right)}
+
+\newcommand{\tten}[1]{\times 10^{#1}}
+
+\newcommand{\aij}[1]{a_{#1}}
+\newcommand{\bij}[1]{b_{#1}}
+\newcommand{\rij}[1]{r_{#1}}
+
+\newcommand{\R}[1]{\mathbb{R}^{#1}}
+
+\newcommand{\ith}{i^{\textrm{th}}}
+\newcommand{\jth}{i^{\textrm{th}}}
+\newcommand{\kth}{i^{\textrm{th}}}
+
+\newcommand{\inv}[1]{{#1}^{-1}}
+
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\xhat}{\hat{\mathbf{x}}}
+
+\newcommand{\beq}{\begin{eqnarray}}
+\newcommand{\eeq}{\end{eqnarray}}
+
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+
+\newcommand{\bsq}{\mathsmaller{\blacksquare}}
+
+\newcommand{\iter}[1]{^{\myp{#1}}}
+
+% matrix macro
+\newcommand{\mymat}[1]{
+\left[
+\begin{array}{rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr}
+#1
+\end{array}
+\right]
+}
+
+\newcommand{\smallaug}[1]{
+\left[
+\begin{array}{rr|r}
+#1
+\end{array}
+\right]
+}
+
+
+% Actual document starts here
+% ======================================================================================
+\begin{document}
+
+% ======================================================================================
+% Begin Problems
+% ======================================================================================
+
+\begin{minipage}{0.65\textwidth}
+\nin {\bf CSCI 2824 -- Fall 2019 } \\
+
+{\bf Name: }  Daniel Kim \\
+{\bf Student ID: }  102353420
+\end{minipage}\hfill
+\begin{minipage}{0.35\textwidth}
+\hfill {\bf Homework 2} \\
+
+\end{minipage}
+
+% Actual text body starts here
+% ======================================================================================
+
+\vfive
+
+\nin This assignment is due on Friday, September 13 to Gradescope by Noon.  You are expected to write up your solutions neatly.  Remember that you are encouraged to discuss problems with your classmates, but you must work and write your solutions on your own. 
+
+{\bf Important}: You may \textbf{neatly} Latex your solutions for +1 extra credit on the assignment. 
+
+\ben
+
+%==============================================================================
+% Question 1
+%==============================================================================
+
+\item For the two parts of this problem related to the Island of Knights and Knaves, consider the propositional function $K(x) = $ "$x$ is a knight", where the domain for $x$ is all of the inhabitants of the Island.
+
+\ben
+\item While performing an academic survey on the Island of Knights and Knaves you manage to speak to \textbf{every} inhabitant on the island and each one tells you "Some of us are Knights and some of us are Knaves".
+\ben
+\item Translate this statement into a predicate statement using quantifiers, connectives, and $K(x)$. You may not define any other propositional functions.
+\item What can you conclude? Note that a truth table won't be much help because you don't know how many people live on the island. Instead you should come up with a sensible argument and justify it as concisely as possible.
+\een
+\item While performing a much lazier academic survey on another Island of Knights and Knaves you speak to \textbf{only one} inhabitant on the island and they tell you "All of us are Knaves".
+\ben
+\item Translate this statement into a predicate statement using quantifiers, connectives, and $K(x)$. You may not define any other propositional functions.
+\item What can you conclude? Again, do not use a truth table; a well-constructed argument will suffice.
+\een
+\een
+
+
+  \if\solutions1
+  \vspace{2mm}
+  
+  \textbf{Solution:}   \\
+
+  \fi
+
+\vspace{5mm}
+
+%==============================================================================
+% Question 2
+%==============================================================================
+\vspace{5mm}
+
+\item You arrive on yet another Island of Knights and Knaves. Knights always tell the truth and Knaves always lie. You meet three inhabitants: $A$, $B$, and $C$. $A$ claims "I am a knight or $B$ is a knave." $B$ tells you, "$A$ is a knight and $C$ is a knave." $C$ says, "Myself and $B$ are different." Use a truth table to determine who is a knight and who is a knave, if possible. Justify and explain your answer.
+
+
+
+\if\solutions1
+\vspace{2mm}
+  
+\textbf{Solution:} \\ %%%%%%%% Type your solution here!
+
+
+\fi
+
+\vspace{5mm}
+
+%==============================================================================
+% Question 3
+%==============================================================================
+
+\item 
+
+\ben
+\item Show that $(p \Leftrightarrow q) \Leftrightarrow (\neg p \Leftrightarrow q)$ is unsatisfiable using \textbf{both} (i) a truth table and (ii) a logical argument (not a chain of logical equivalences, but rather a written-out argument in English).
+
+\vspace{2mm}
+
+\item Show that $ (p \to r) \vee (q \to r) $ is logically equivalent to $(p \wedge q) \to r $ using \textbf{both} (i) a truth table and (ii) a chain of logical equivalences. Note that you may only use logical equivalences from Table 6 (p. 27 of Rosen textbook) and the other four named equivalences given in lecture. At each step you should cite the name of the equivalence rule you are using, and please only use one rule per step. Is this compound proposition satisfiable? Why or why not?
+\een
+
+
+\if\solutions1
+\vspace{2mm}
+
+\textbf{Solution:}.  %%%%%%%% Type solution here!
+
+  
+\fi
+
+\vspace{5mm}
+
+%==============================================================================
+% Question 4
+%==============================================================================
+\vspace{5mm}
+
+
+\item A new college, The University of Discrete Structures, is opening in Boulder! Ioana and Rachel are its founders and are holding a meeting to determine how many different courses to offer. The following rules are being insisted on: Each course must meet in a different building on the UDS campus, and no two students enrolled at the college may take the exact same set of courses.  This means that for any two students, their list of courses that they are taking must differ by at least one course. It is required that all students enroll in at least one course. You must fully justify the following questions:
+
+\ben
+\item If there are 500 students enrolled in the new university, what is the smallest number of buildings that will be needed to host classes?
+\item In general, with $n$ different buildings, what is the maximum number of students that can enroll in the university so that rules are still met?
+
+\een
+
+
+\if\solutions1
+\vspace{2mm}
+
+\textbf{Solution:} %%%%% Type solutions here.
+
+
+\fi
+
+%==============================================================================
+% Question 5
+%==============================================================================
+
+\item  Consider the following satisfiability problem: Donatello, Rafael, Michelangelo, Leonardo, and Splinter are going to order a pizza. First they need to agree on some toppings. Splinter is happy to eat any toppings. The other members of the group, however, are very particular about their pizza topping preferences.
+
+They will order a pizza that can have 1, 2, or 3 toppings, and the entire pizza must have the same topping(s) on all portions of it. (e.g. it can't be part pepperoni and part cheese). The group's preferences are:
+
+\ben
+\item [i.] Rafael wants licorice and not peanut butter.
+\item [ii.] Michelangelo does not want salami.
+\item [iii.] If the pizza has peanut butter on it, then Donatello does not want licorice.
+\item [iv.] Leonardo wants licorice if and only if there is salami or granola.
+\een
+
+Let $Z(x)$ represent the propositional function "the pizza must have topping $x$", where the domain for $x$ is the set of possible pizza toppings: granola (G), licorice (L), peanut butter (P), and salami (S). Note that statements like "Rafael wants a pizza with licorice" does not imply that Rafael wants no other toppings. For example, Rafael would be perfectly happy with a licorice and salami pizza.
+
+\ben
+\item Translate each of the group's pizza topping requirements $ i-iv $ from English into a proposition using the given propositional function notation.
+\item Are the group's pizza topping requirements satisfiable? If they are, provide a set of pizza toppings that satisfies the requirements. If they are not, provide a \textbf{concise} written argument explaining why not. Do \textbf{not} use a truth table.
+\een
+
+
+  \if\solutions1
+  \vspace{2mm}
+  
+  \textbf{Solution:}  
+  
+  \fi
+  
+
+
+%==============================================================================
+
+\een 
+
+
+\end{document}

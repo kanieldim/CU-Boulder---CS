@@ -1,0 +1,71 @@
+What is your name?: Jane
+Please enter the names of your companions below:
+1 : John
+2 : Mike
+3 : Mia
+4 : Sue
+
+You are starting at mile: 0.
+There are 2040 that you must travel to reach your destination.
+Before the start of your trip, you can visit the store and buy supplies: food, oxen, bullets and wagon parts. Would you like to visit the store? Y / N y
+
+Welcome to the Store!
+YOU HAD SAVED $1200 TO SPEND FOR THE TRIP, AND YOU'VE INITIALLY PAID $200 FOR A WAGON. YOU WILL NEED TO SPEND THE REST OF YOUR MONEY ON THE FOLLOWING ITEMS:
+- OXEN. YOU CAN SPEND $100-$200 ON YOUR TEAM. THE MORE YOU SPEND, THE FASTER YOU'LL GO BECAUSE YOU'LL HAVE BETTER ANIMALS
+- FOOD. THE MORE YOU HAVE, THE LESS CHANCE THERE IS OF GETTING SICK
+- BULLETS - $2 BUYS A BELT OF 20 BULLETS. YOU WILL NEED BULLETS FOR ATTACKS BY ANIMALS AND BANDITS, AND FOR HUNTING FOOD
+- MISCELLANEOUS SUPPLIES. THIS INCLUDES MEDICINE AND OTHER THINGS YOU WILL NEED FOR SICKNESS AND EMERGENCY REPAIRS
+YOU CAN SPEND ALL YOUR MONEY BEFORE YOU START YOUR TRIP, OR YOU CAN SAVE SOME OF YOUR CASH TO SPEND AT FORTS ALONG THE WAY WHEN YOU RUN LOW. HOWEVER, ITEMS COST MORE AT THE FORTS. YOU CAN ALSO GO HUNTING ALONG THE WAY TO GET MORE FOOD.
+Right now you have: $1000.
+You must spend between $100 to $200 dollars on oxen. There are 2 oxen in a yoke and the price of each yoke is $40.0.
+How many yokes do you wish to purchase?: 6
+You have chosen to spend more than $200 on yokes, please choose again.
+How many yokes do you wish to purchase?: 5
+
+Your current bill is: 200
+I recommend at least 200 lbs. per person at the price of $0.5 per pound. Remember the wagon cannot hold more than 1000 lbs. of food.
+How many pounds of food do you wish to purchase?: 1001
+How many pounds of food do you wish to purchase?: 1500
+How many pounds of food do you wish to purchase?: 1000
+
+Your current bill is: 700
+A box of 20 bullets costs $2.0.
+How many boxes do you wish to purchase?: 5
+Your current bill is: 710
+A wagon part (wheels, axels, tongues) costs $10.0.
+How many parts do you wish to purchase?: 4
+A medical aid kit costs $15.0.
+How many kits do you wish to purchase?: 2
+Your final bill is: 780
+You finally have: $220. Thank you for visiting the store
+Your departure date curently is: 1847-03-28. Would you like to change it? Y / N y
+Remember you can change it to any date between: 1847-03-01 to 1847-05-01
+Date (mm/dd/yyyy): 1847-06-01
+Invalid date! Please try again
+Date (mm/dd/yyyy): 1847/06/01
+Invalid date! Please try again
+Date (mm/dd/yyyy): 06/01/1847
+Date is out of required range. Please try again.
+Your departure date curently is: 1847-03-28. Would you like to change it? Y / N y
+Remember you can change it to any date between: 1847-03-01 to 1847-05-01
+Date (mm/dd/yyyy): 02/01/1847
+Date is out of required range. Please try again.
+Your departure date curently is: 1847-03-28. Would you like to change it? Y / N y
+Remember you can change it to any date between: 1847-03-01 to 1847-05-01
+Date (mm/dd/yyyy): 03/01/1847
+The final date of departure is: 1847-03-01
+You must reach the Oregon City by 1847-11-30
+
+
+Let the journey begin!
+
+
+
+
+1847-03-01
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit 4
+
+
+
+

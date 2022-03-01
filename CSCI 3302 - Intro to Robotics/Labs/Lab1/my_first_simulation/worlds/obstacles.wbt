@@ -1,0 +1,110 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.9384894096158006 0.32550626292962975 0.11525320313367803 0.6643292361159521
+  position 0.6858023408365583 1.9493517437122163 2.708893236469909
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation 0.29318 0.05 0.17833
+  rotation 0 -1 0 1.047195307179586
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.212715 0.05 -0.269646
+  rotation 0 1 0 3.14159
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  translation 0.101604 -3.19739e-05 -0.0270751
+  rotation 0.00019737230086728022 0.9999998600770219 -0.0004908055737579646 2.368687511695305
+  controller "epuck_go_foward"
+}
+DEF Ball Solid {
+  translation -0.131787 0.2 -0.00449056
+  children [
+    DEF BALL_GEOMETRY Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+DEF Wall1 Solid {
+  translation 0.5 0.05 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.1 0.98
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF Wall2 Solid {
+  translation -0.5 0.05 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.1 0.98
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF Wall3 Solid {
+  translation 0 0.05 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.98 0.1 0.02
+      }
+    }
+  ]
+  name "solid(3)"
+}
+DEF Wall4 Solid {
+  translation 0 0.05 -0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.98 0.1 0.02
+      }
+    }
+  ]
+  name "solid(4)"
+}

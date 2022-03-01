@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[]{algorithmicx}
+\usepackage{comment}
+\usepackage{tkz-berge}
+\usetikzlibrary{positioning, automata}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{36pt}
+
+\usepackage{hyperref}
+
+
+
+\newcommand{\makenonemptybox}[2]{%
+%\par\nobreak\vspace{\ht\strutbox}\noindent
+\item[]
+\fbox{% added -2\fboxrule to specified width to avoid overfull hboxes
+% and removed the -2\fboxsep from height specification (image not updated)
+% because in MWE 2cm is should be height of contents excluding sep and frame
+\parbox[c][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
+  \hrule width \hsize height 0pt
+  #2
+ }%
+}%
+\par\vspace{\ht\strutbox}
+}
+\makeatother
+
+\begin{document}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+\lhead{{\bf CSCI 3104, Algorithms \\ Quiz 6 } }
+\rhead{Name: \fbox{\phantom{This is a really long name}} \\ ID: \fbox{\phantom{This is a student ID}} \\ {\bf Profs.\ Chen \& Grochow\\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\noindent \textbf{Instructions:} This quiz is open book and open note, but \textbf{not} open-internet. You \textbf{may} post clarification questions to Piazza, with the understanding that you may not receive an answer in time and posting does count towards your 30 minutes. Questions posted to Piazza \textbf{must be posted as PRIVATE QUESTIONS.} Other use of the internet, including searching for answers or posting to sites like Chegg, is strictly prohibited. Any violation of the honor code is grounds to receive a 0 on this quiz. Proofs should be written in \textbf{complete sentences.} \textbf{Show and justify all work to receive full credit.}
+\end{small} 
+
+\hrulefill 
+
+	\noindent \textbf{Standard 14.} \itshape{Consider the following graph with the source node $s$:
+	
+\begin{center}
+\noindent \includegraphics[scale=0.25]{BFS.pdf}
+\end{center}
+
+
+	Is it possible to obtain the following tree using BFS? Clearly justify your answer.
+	
+	
+	\begin{center}
+\noindent \includegraphics[scale=0.25]{tree.pdf}
+\end{center}
+}
+	
+% YOUR ANSWER HERE
+	
+\end{document}
+
+

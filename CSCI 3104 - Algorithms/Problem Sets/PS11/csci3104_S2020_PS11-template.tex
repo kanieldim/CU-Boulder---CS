@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{xcolor}
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+
+\setlength{\headsep}{36pt}
+
+\begin{document}
+
+\lhead{{\bf CSCI 3104, Algorithms \\ Problem Set 11 -- Due Wed April 29 11:55pm} }
+\rhead{Name: \fbox{\phantom{A really long name}} \\ ID: \fbox{\phantom{A reasonable ID}} \\ {\bf Profs.\ Chen \& Grochow \\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\textit{Advice 1}:\ For every problem in this class, you must justify your answer:\ show how you arrived at it and why it is correct. If there are assumptions you need to make along the way, state those clearly.
+
+\vspace{-3mm} 
+\textit{Advice 2}:\ Informal reasoning is typically insufficient for full credit. Instead, write a logical argument, in the style of a mathematical proof.
+
+\textbf{Instructions for submitting your solutions}:
+\vspace{-5mm} 
+
+\begin{itemize}
+	\item All submissions must be typed.
+	\item You should submit your work through the \href{https://canvas.colorado.edu/courses/59906}{\textbf{class Canvas page}} only.
+	\item You may not need a full page for your solutions; pagebreaks are there to help Gradescope automatically find where each problem is. Even if you do not attempt every problem, please allot at least as many pages per problem (or subproblem) as are allotted in this template.
+%	\item For drawing graphs, you may include scans of hand-drawn graphs into your PDF file. \textbf{However, the rest of your solution (including the explanation of the graph) must be typed. If your words are not typed, you will get a 0 for that part of the question.}
+\end{itemize}
+
+Quicklinks: \ref{1} \ref{2}
+\vspace{-4mm} 
+\end{small}
+
+
+\hrulefill
+
+\newpage
+
+\begin{enumerate}
+
+\item \label{1} Indiana Jones is gathering $n$ artifacts from a tomb, which is about to crumble and needs to fit them into $5$ cases. Each case can carry up to $W$ kilograms, where $W$ is fixed. Suppose the weight of artifact $i$ is the positive integer $w_{i}$. Indiana Jones needs to decide if he is able to pack all the artifacts. We formalize the \textsf{Indiana Jones} decision problem as follows.
+\begin{itemize}
+\item \textsf{Instance:} The weights of our $n$ items, $w_{1}, \ldots, w_{n} > 0$. 
+\item \textsf{Decision:} Is there a way to place the $n$ items into different cases, such that each case is carrying weight at most $W$?
+\end{itemize}
+
+\noindent Show that $\textsf{Indiana Jones} \in \textsf{NP}.$
+
+
+\newpage
+\item \label{2} A student has a decision problem $L$, which they know belongs to $\textsf{NP}$. This student wishes to show that $L$ is $\textsf{NP-Complete}$. They attempt to do so by constructing a polynomial time reduction from $L$ to $\textsf{SAT}$, a known $\textsf{NP-Complete}$ problem. That is, the student attempts to show that $L \leq_{p} \textsf{SAT}$. Determine if this student's approach is correct and justify your answer.
+
+\end{enumerate}
+\end{document}
+
+

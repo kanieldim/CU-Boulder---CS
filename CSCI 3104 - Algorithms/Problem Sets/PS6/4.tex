@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{xcolor}
+
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{hyperref}
+
+\setlength{\headsep}{36pt}
+
+\begin{document}
+
+\lhead{{\bf CSCI 3104, Algorithms \\ Problem Set 6 -- Due Fri Feb 28 11:55pm} }
+\rhead{Name: \fbox{\phantom{A really long name}} \\ ID: \fbox{\phantom{A reasonable ID}} \\ {\bf Profs.\ Chen \& Grochow \\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\textit{Advice 1}:\ For every problem in this class, you must justify your answer:\ show how you arrived at it and why it is correct. If there are assumptions you need to make along the way, state those clearly.
+
+\vspace{-3mm} 
+\textit{Advice 2}:\ Informal reasoning is typically insufficient for full credit. Instead, write a logical argument, in the style of a mathematical proof.
+
+\textbf{Instructions for submitting your solutions}:
+\vspace{-5mm} 
+
+\begin{itemize}
+	\item All submissions must be easily legible.
+	\item You should submit your work through the \href{https://canvas.colorado.edu/courses/59906}{\textbf{class Canvas page}} only.
+	\item You may not need a full page for your solutions; pagebreaks are there to help Gradescope automatically find where each problem is. Even if you do not attempt every problem, please allot at least as many pages per problem (or subproblem) as are allotted in this template.
+	\item For drawing graphs, you may include scans of hand-drawn graphs into your PDF file. \textbf{However, the rest of your solution (including the explanation of the graph) must be typed. If your words are not typed, you will get a 0 for that part of the question.}
+\end{itemize}
+
+Quicklinks: \ref{1} \ref{2} \ref{3} \ref{4a} \ref{4b} \ref{4c}
+\vspace{-4mm} 
+\end{small}
+
+
+\hrulefill
+
+\begin{enumerate}
+
+\newpage
+
+\item  \label{1} Give an example of a (simple, undirected) graph $G=(V, E)$, a start
+vertex $s \in V$ and a set of tree edges $E_{T} \subseteq E$ such that
+for each vertex $v \in V$, the unique path in the graph $(V,E_{T})$
+from $s$ to $v$ is a shortest path in $G$, yet the set of edges $E_{T}$
+cannot be produced by running a breadth-first search on $G$, no matter
+how the vertices are ordered. Include an
+explanation of why your example satisfies the requirements.\\
+
+% YOUR ANSWER HERE
+\pagebreak
+
+\item \label{2} A \emph{simple $s \to t$ path} in a graph $G$ is a path in $G$ starting at $s$, ending at $t$, and never visiting the same vertex twice. Give an example graph (simple, undirected, unweighted) $G=(V,E)$ and vertices $s,t \in V$ such that DFS finds a path from $s$ to $t$ which is neither a shortest path nor a longest simple path. Detail the execution of DFS (list the contents of the queue at each step, and which vertex it pops off the queue), show the final $s \to t$ path it finds, show a shorter $s \to t$ path, and a longer simple $s \to t$ path.
+% YOUR ANSWER HERE
+\pagebreak
+
+\item \label{3} Give an example of a simple \emph{directed, weighted} graph $G=(V,E,w\colon E \to \mathbb{R})$ and vertices $s,t \in V$ such that Dijkstra's algortihm started at $s$ does \emph{not} find the shortest $s \to t$ path. \emph{Hint:} You will need to use negative edge weights. (Note: this shows that for finding shortest paths, the greedy choice property \emph{fails} in the presence of negative edge weights. Do you see why?)
+% YOUR ANSWER HERE
+\pagebreak
+
+\item \label{4} You have three batteries, with 4200, 2700, and 1600 mAh (milli-Amp-hours), respectively. The 2700 and 1600-mAh batteries are fully charged (containing 2700 mAh and 1600 mAh, respectively), while the 4200-mAh battery is empty, with 0 mAh. You have a battery transfer device which has a ``source'' battery position and a ``target'' battery position. When you place two batteries in the device, it instantaneously transfers as many mAh from the source battery to the target battery as possible. Thus, this device stops the transfer either when the source battery has no mAh remaining or when the destination battery is fully charged (whichever comes first). 
+
+But battery transfers aren't free! The battery device is also hooked up to your phone by bluetooth, and automatically charges you a number of cents equal to however many mAh it just transfered. 
+	
+	The goal in this problem is to determine whether there exists a sequence of transfers that leaves exactly 1200 mAh either in the 2700-mAh battery or the 1600-mAh battery, and if so, how little money you can spend to get this result.
+	\\
+	\\
+
+	\newpage
+	\begin{enumerate}
+	
+	
+	\item \label{4a} Rephrase this is as a graph problem. Give a precise definition of how to model this problem as a graph, and state the specific question about this graph that must be answered.
+	\\	
+	\\We should make a directed, weighted graph G = (V, E) that each V in the graph will contain the state of all three batteries, and each E will present the cost of a transfer. The question is to find a shortest path from started node to the state node we are looking for.
+	\\
+	\vspace{3.5in}
+	\item \label{4b} What algorithm should you apply to solve this problem?
+	\\
+	Dijkstra's algorithm.
+	
+	
+	\newpage
+	
+	\item \label{4c} Apply that algorithm to the question. Report and justify your answer---both the sequence of steps and the total cost. To justify your answer here likely means you will have to detail the steps the algorithm takes.
+	\\
+	\\
+	Set dist (k) is the distance from start node to node k.When we apply Dijkstra's algorithm to this graph:
+	Pick the start node A, dist (A)=0.\\
+dist (B)= dist (A) +w(A, B)=1600, dist (C) = dist(A) +w(A, C)=2700\\
+dist (D)= dist (B) +1600 =3200, dist(E) =dist (B) +2600=4200\\
+dist (F)= dist (C) +1500 = 4200, dist (G)=dist (C) + 1600= 4300\\
+dist (H)= dist (D) +1600 =4800, dist (I) =dist (E) +1600= 5800\\
+dist (J)=dist (F) +2700 = 6900, dist(K)= dist (G) +1600= 5900\\
+dist (O)=dist (H) +1100 =5900, dist (Q)= dist (I) 11600= 7400\\
+dist (L)=dist (K) +1100 =7000, dist (P)= dist (O) +2700 =8600\\
+dist (M) = dist(J)+1500 =8400, which reach the target node. We have 1200-mAh the 2700-mAh battery.\\
+dist (N)=dist (L) +2700 = 9700, dist (R) =dist (Q) +1600= 9000\\
+
+As we go through each steps so far, the path which revisited nodes always have a larger distance, so it won't update the dist of those nodes. The paths which keep visit new nodes now all have a larger dist than dist (M). Node M is one of the expected node we want to reach.\\
+So the Dijkstra's algorithm has found the shortest path from A to M, which is a sequence of transfers that leaves exactly 1200 mAh in the 2700-mAh battery.\\
+List: (A, C), (C, F), (F,J), (J, M).\\
+Total Cost: 8400.\\
+	\end{enumerate}
+
+
+\end{enumerate}
+
+
+\end{document}
+
+

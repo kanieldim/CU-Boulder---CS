@@ -1,0 +1,31 @@
+[info] StackMachineTest:
+[info] - stack machine test 1
+[info] - stack machine test 2
+[info] - stack machine test 3 *** FAILED ***
+[info]   java.lang.AssertionError: assertion failed
+[info]   at scala.Predef$.assert(Predef.scala:208)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateSingleInstruction(StackMachineEmulator.scala:62)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.$anonfun$emulateStackMachine$1(StackMachineEmulator.scala:161)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
+[info]   at scala.collection.immutable.List.foldLeft(List.scala:89)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateStackMachine(StackMachineEmulator.scala:159)
+[info]   at edu.colorado.csci3155.project1.StackMachineTest.$anonfun$new$3(StackMachineTest.scala:26)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   ...
+[info] - stack machine test 4 *** FAILED ***
+[info]   java.lang.AssertionError: assertion failed
+[info]   at scala.Predef$.assert(Predef.scala:208)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateSingleInstruction(StackMachineEmulator.scala:62)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.$anonfun$emulateStackMachine$1(StackMachineEmulator.scala:161)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
+[info]   at scala.collection.immutable.List.foldLeft(List.scala:89)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateStackMachine(StackMachineEmulator.scala:159)
+[info]   at edu.colorado.csci3155.project1.StackMachineTest.$anonfun$new$4(StackMachineTest.scala:38)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   ...
+[info] - stack machine test 5 *** FAILED ***
+[info]   0.2722105831863981 was not less than or equal to 1.0E-4 (StackMachineTest.scala:58)

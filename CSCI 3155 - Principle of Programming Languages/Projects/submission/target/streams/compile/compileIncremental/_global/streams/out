@@ -1,0 +1,110 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
+[debug] current source = Set(${BASE}/StackMachineEmulator.scala, ${BASE}/StackMachineCompiler.scala, ${BASE}/StackMachineTest.scala, ${BASE}/Main.scala, ${BASE}/CompilerTest.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/Main.scala, ${BASE}/StackMachineTest.scala, ${BASE}/StackMachineEmulator.scala, ${BASE}/StackMachineCompiler.scala, ${BASE}/CompilerTest.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] Full compilation, no sources in previous analysis.
+[debug] all 5 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[debug] compilation cycle 1
+[info] compiling 5 Scala sources to C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\target\scala-2.13\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.0:compile for Scala 2.13.3
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.3. Compiling...
+[debug] Creating plain compiler interface for 2.13.3.
+[debug]   > Arguments: 
+[debug] 	-d
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_bb6b907a
+[debug] 	-nowarn
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.3\scala-library-2.13.3.jar
+[debug] 	-classpath
+[debug] 	C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.4.0\compiler-interface-1.4.0.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.4.0\util-interface-1.4.0.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-bridge_2.13\1.4.0\compiler-bridge_2.13-1.4.0-sources.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.3\scala-compiler-2.13.3.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.3\scala-reflect-2.13.3.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.15.0\jline-3.15.0.jar;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\scala\ZincCompat.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\API.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\AbstractZincFile.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\Analyzer.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\CallbackGlobal.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\ClassName.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\Compat.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\CompilerBridge.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\ConsoleBridge.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\DelegatingReporter.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\Dependency.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\ExtractAPI.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\ExtractUsedNames.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\GlobalHelpers.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\InteractiveConsoleBridge.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\InteractiveConsoleFactoryBridge.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\InteractiveConsoleHelper.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\InteractiveConsoleResponse.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\JarUtils.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\JavaUtils.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\LocalToNonLocalClass.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\LocateClassFile.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\Log.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\Message.scala
+[debug] 	C:\Users\DANIEL~1\AppData\Local\Temp\sbt_d0831b12\xsbt\ScaladocBridge.scala
+[debug]       
+[info]   Compilation completed in 9.168s.
+[debug] [zinc] Running cached compiler 1935203f for Scala compiler version 2.13.3
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Program Files\Java\jdk1.8.0_261\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_261\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_261\jre\classes;C:\Users\Daniel Kim\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.3\scala-library-2.13.3.jar
+[debug] 	-classpath
+[debug] 	C:\Users\Daniel Kim\Documents\CU Fall 2020\PPL\Projects\submission\target\scala-2.13\classes
+[debug] Compilation failed (CompilerInterface)
+[error] Compilation failed
+[error] 	at xsbt.CachedCompiler0.handleErrors(CompilerBridge.scala:183)
+[error] 	at xsbt.CachedCompiler0.run(CompilerBridge.scala:172)
+[error] 	at xsbt.CachedCompiler0.run(CompilerBridge.scala:134)
+[error] 	at xsbt.CompilerBridge.run(CompilerBridge.scala:39)
+[error] 	at sbt.internal.inc.AnalyzingCompiler.compile(AnalyzingCompiler.scala:92)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$7(MixedAnalyzingCompiler.scala:185)
+[error] 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:240)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$4(MixedAnalyzingCompiler.scala:175)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compile$4$adapted(MixedAnalyzingCompiler.scala:156)
+[error] 	at sbt.internal.inc.JarUtils$.withPreviousJar(JarUtils.scala:232)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.compileScala$1(MixedAnalyzingCompiler.scala:156)
+[error] 	at sbt.internal.inc.MixedAnalyzingCompiler.compile(MixedAnalyzingCompiler.scala:203)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1(IncrementalCompilerImpl.scala:571)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileInternal$1$adapted(IncrementalCompilerImpl.scala:571)
+[error] 	at sbt.internal.inc.Incremental$.$anonfun$apply$5(Incremental.scala:174)
+[error] 	at sbt.internal.inc.Incremental$.$anonfun$apply$5$adapted(Incremental.scala:172)
+[error] 	at sbt.internal.inc.Incremental$$anon$2.run(Incremental.scala:459)
+[error] 	at sbt.internal.inc.IncrementalCommon$CycleState.next(IncrementalCommon.scala:116)
+[error] 	at sbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:56)
+[error] 	at sbt.internal.inc.IncrementalCommon$$anon$1.next(IncrementalCommon.scala:52)
+[error] 	at sbt.internal.inc.IncrementalCommon.cycle(IncrementalCommon.scala:261)
+[error] 	at sbt.internal.inc.Incremental$.$anonfun$incrementalCompile$8(Incremental.scala:414)
+[error] 	at sbt.internal.inc.Incremental$.withClassfileManager(Incremental.scala:499)
+[error] 	at sbt.internal.inc.Incremental$.incrementalCompile(Incremental.scala:401)
+[error] 	at sbt.internal.inc.Incremental$.apply(Incremental.scala:166)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.compileInternal(IncrementalCompilerImpl.scala:571)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.$anonfun$compileIncrementally$1(IncrementalCompilerImpl.scala:489)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.handleCompilationError(IncrementalCompilerImpl.scala:332)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.compileIncrementally(IncrementalCompilerImpl.scala:419)
+[error] 	at sbt.internal.inc.IncrementalCompilerImpl.compile(IncrementalCompilerImpl.scala:137)
+[error] 	at sbt.Defaults$.compileIncrementalTaskImpl(Defaults.scala:2139)
+[error] 	at sbt.Defaults$.$anonfun$compileIncrementalTask$2(Defaults.scala:2099)
+[error] 	at sbt.internal.io.Retry$.apply(Retry.scala:40)
+[error] 	at sbt.internal.io.Retry$.apply(Retry.scala:23)
+[error] 	at sbt.internal.server.BspCompileTask$.compute(BspCompileTask.scala:31)
+[error] 	at sbt.Defaults$.$anonfun$compileIncrementalTask$1(Defaults.scala:2096)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[error] 	at java.lang.Thread.run(Thread.java:748)
+[error] (Compile / compileIncremental) Compilation failed

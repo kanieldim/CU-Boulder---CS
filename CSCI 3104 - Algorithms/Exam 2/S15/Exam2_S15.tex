@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{\baselineskip}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[]{algorithmicx}
+\usepackage{comment}
+\usepackage{tkz-berge}
+\usetikzlibrary{positioning, automata}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headsep}{36pt}
+
+\usepackage{hyperref}
+
+
+
+\newcommand{\makenonemptybox}[2]{%
+%\par\nobreak\vspace{\ht\strutbox}\noindent
+\item[]
+\fbox{% added -2\fboxrule to specified width to avoid overfull hboxes
+% and removed the -2\fboxsep from height specification (image not updated)
+% because in MWE 2cm is should be height of contents excluding sep and frame
+\parbox[c][#1][t]{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
+  \hrule width \hsize height 0pt
+  #2
+ }%
+}%
+\par\vspace{\ht\strutbox}
+}
+\makeatother
+
+\begin{document}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+\lhead{{\bf CSCI 3104, Algorithms \\ Exam 2 -- S15 } }
+\rhead{Name: \fbox{\phantom{This is a really long name}} \\ ID: \fbox{\phantom{This is a student ID}} \\ {\bf Profs.\ Chen \& Grochow\\ Spring 2020, CU-Boulder}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\phantom{Test}
+
+\begin{small}
+\noindent \textbf{Instructions:} This quiz is open book and open note. You \textbf{may} post clarification questions to Piazza, with the understanding that you may not receive an answer in time and posting does count towards your time limit (30 min for 1x, 37.5 min for 1.5x, 45 min for 2x). Questions posted to Piazza \textbf{must be posted as PRIVATE QUESTIONS.} Other use of the internet, including searching for answers or posting to sites like Chegg, is strictly prohibited. Violations of these are grounds to receive a 0 on this quiz. Proofs should be written in \textbf{complete sentences.} \textbf{Show and justify all work to receive full credit.} 
+
+\noindent \textbf{YOU MUST SIGN THE HONOR PLEDGE. Your quiz will otherwise not be graded.}  
+\noindent \textbf{Honor Pledge:} On my honor, I have not used any outside resources (other than my notes and book), nor have I given any help to anyone completing this assignment. 
+
+\noindent \textbf{Your Name:} \underline{\hskip 250pt}\end{small} 
+
+\hrulefill 
+
+\noindent  \textbf{Standard 15.} Consider the following directed, weighted graph $G$. At the first iteration of Dijksrta's Algorithm, using $S$ as the source vertex, we examine the edges $(S, A), (S, C)$, and $(S, E)$ edges by placing them into a priority queue. However, only $(S, A)$ is \textbf{selected} at the first iteration. 
+
+\begin{center}
+	\begin {tikzpicture}[-latex ,auto ,node distance =2 cm and 3cm ,on grid ,
+	semithick ,
+	state/.style ={ circle ,top color =white , bottom color = processblue!20 ,
+	draw,processblue , text=blue , minimum width =1 cm}]
+
+	\node[state] (A) {$A$};
+	\node[state] (B) [above right = of A] {$B$};
+	\node[state] (C) [below right = of A] {$C$};
+	\node[state] (G) [below right = of B] {$S$};
+	\node[state] (D) [above right = of G] {$D$};
+	\node[state] (E) [below right = of G] {$E$};
+	\node[state] (F) [below right = of D] {$F$};
+	
+	\path (A) edge node[above] {$6$} (B);
+	\path (A) edge node[above] {$4$} (C);
+	\path (B) edge node[above] {$2$} (G);
+	\path (B) edge node[above] {$1$} (D);
+	\path (G) edge node[above] {$1$} (A);
+	\path (E) edge node[above] {$7$} (C);
+	\path (D) edge node[above] {$3$} (G);
+	\path (D) edge node[above] {$10$} (F);
+	\path (F) edge node[above] {$1$} (E);
+	\path (G) edge node[above] {$6$} (E);
+	\path (G) edge node[above] {$2$} (F);
+	\path (G) edge node[above] {$2$} (C);
+	
+	\end{tikzpicture}  
+\end{center}
+
+\noindent 
+
+\textbf{(Questions begin on next page)}
+
+\pagebreak
+
+\begin{enumerate}[label=(\alph*)]
+\item What are the next five edges \textbf{selected} by Dijkstra's algorithm? Show your work.
+
+% YOUR ANSWER HERE
+
+\pagebreak
+
+\item After these have been selected, what are the distances from $S$ that the algorithm has recorded for each vertex in $G$? 
+% YOUR ANSWER HERE
+
+
+
+
+\end{enumerate}
+
+
+\end{document}
+
+

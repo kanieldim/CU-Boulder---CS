@@ -1,0 +1,18 @@
+//Name, Main Ingredient, Ingredient 2, Ingredient 3, Ingredient 4, Cook Time, Difficulty, # of Ingredients, Meal Type
+
+omelet,egg,milk,cheese,none,3,1,3,breakfast
+blueberry muffin,flour,egg,milk,blueberries,10,5,4,breakfast
+breakfast bagelwich,bagel,egg,bacon,cheese,11,2,4,breakfast
+breakfast burrito, tortilla,egg,potato,cheese,sausage,11,2,4,breakfast
+pancake,flour,egg,milk,sugar,10,1,4,breakfast
+smoothie bowl,milk,acai,strawberry,mango,4,1,4,breakfast
+lox bagel,bagel,cream cheese,smoked salmon,none,4,1,3,breakfast
+french toast,bread,egg,cinnamon,none,7,2,3,breakfast
+skillet,potatoes,cheese,onion,bacon,20,3,4,breakfast
+hash browns,potato,oil,none,none,15,2,2,breakfast
+toast,bread,butter,none,none,5,1,2,breakfast
+avocado toast,avocado,bread,salt,pepper,6,1,4,breakfast
+scrambled egg,egg,oil,none,none,5,1,2,breakfast
+waffle,flour,egg,milk,sugar,10,1,4,breakfast   (waffle and pancake are the exact same thing??)
+
+

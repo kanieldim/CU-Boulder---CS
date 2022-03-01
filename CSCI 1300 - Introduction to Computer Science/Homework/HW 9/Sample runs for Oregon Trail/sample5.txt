@@ -1,0 +1,61 @@
+What is your name?: p1
+Please enter the names of your companions below:
+1 : p2
+2 : p3
+3 : p4
+4 : p5
+
+You are starting at mile: 0.
+There are 2040 that you must travel to reach your destination.
+Before the start of your trip, you can visit the store and buy supplies: food, oxen, bullets and wagon parts. Would you like to visit the store? Y / N y
+Welcome to the Store!
+YOU HAD SAVED $1200 TO SPEND FOR THE TRIP, AND YOU'VE INITIALLY PAID $200 FOR A WAGON. YOU WILL NEED TO SPEND THE REST OF YOUR MONEY ON THE FOLLOWING ITEMS:
+- OXEN. YOU CAN SPEND $100-$200 ON YOUR TEAM. THE MORE YOU SPEND, THE FASTER YOU'LL GO BECAUSE YOU'LL HAVE BETTER ANIMALS
+- FOOD. THE MORE YOU HAVE, THE LESS CHANCE THERE IS OF GETTING SICK
+- BULLETS - $2 BUYS A BELT OF 20 BULLETS. YOU WILL NEED BULLETS FOR ATTACKS BY ANIMALS AND BANDITS, AND FOR HUNTING FOOD
+- MISCELLANEOUS SUPPLIES. THIS INCLUDES MEDICINE AND OTHER THINGS YOU WILL NEED FOR SICKNESS AND EMERGENCY REPAIRS
+YOU CAN SPEND ALL YOUR MONEY BEFORE YOU START YOUR TRIP, OR YOU CAN SAVE SOME OF YOUR CASH TO SPEND AT FORTS ALONG THE WAY WHEN YOU RUN LOW. HOWEVER, ITEMS COST MORE AT THE FORTS. YOU CAN ALSO GO HUNTING ALONG THE WAY TO GET MORE FOOD.
+Right now you have: $1000.
+You must spend between $100 to $200 dollars on oxen. There are 2 oxen in a yoke and the price of each yoke is $40.0.
+How many yokes do you wish to purchase?: 5
+
+Your current bill is: 200.0
+I recommend at least 200 lbs. per person at the price of $0.5 per pound. Remember the wagon cannot hold more than 1000 lbs. of food.
+How many pounds of food do you wish to purchase?: 0
+
+Your current bill is: 200.0
+A box of 20 bullets costs $2.0.
+How many boxes do you wish to purchase?: 100
+
+Your current bill is: 400.0
+A wagon part (wheels, axels, tongues) costs $10.0.
+How many parts do you wish to purchase?: 10
+A medical aid kit costs $15.0.
+How many kits do you wish to purchase?: 2
+
+Your final bill is: 530.0
+
+You finally have: $470.0. Thank you for visiting the store
+
+Your departure date currently is: 1847-03-28. Would you like to change it? Y / Nn
+The final date of departure is: 1847-03-28
+You must reach the Oregon City by 1847-11-30
+
+
+Let the journey begin!
+
+
+
+
+1847-03-28
+Next Milestone is a river named: Kansas River Crossing and it is 102 miles away.
+1. Rest; 2. Continue; 3. hunt; 4. quit2
+You have chosen to travel for 2 weeks. You will be traveling: 140.0 miles. Food will be consumed accordingly.
+On the way, you have reached the Kansas River Crossing. You only travelled 102 miles.
+------------------------------------------------------------CURRENT STATUS------------------------------------------------------------
+| current_date : 1847-04-11 00:00:00  |  miles_travelled : 102.0  |  next_landmark : 63  |  food : -210  |  bullets : 2000  |  cash : 470.0  |  
+
+The player has ran out of food.
+Sorry, you did not reach Oregon City.
+
+

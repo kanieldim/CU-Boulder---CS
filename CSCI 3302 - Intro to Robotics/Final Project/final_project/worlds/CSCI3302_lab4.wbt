@@ -1,0 +1,302 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  info [
+    "CSCI 3302 Lab 4: Mapping"
+    "Prof. Brad Hayes, University of Colorado Boulder, Fall 2020"
+  ]
+  title "E-Puck"
+  coordinateSystem "NUE"
+  lineScale 0.04
+}
+Viewpoint {
+  orientation 1 0 0 4.71238898038469
+  position 0.500150404479859 1.921674931264587 0.500003454925049
+  follow "e-puck"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF EPUCK E-puck {
+  hidden position_0_0 14.922202760031226
+  hidden position_0_1 9.007755619125197
+  hidden rotation_1 -1 0 0 2.355832145672053
+  hidden rotation_2 0.9999999999999999 0 0 3.558614995233976
+  hidden position_44_0 355.79903999999857
+  hidden position_44_1 621.5987199999994
+  hidden rotation_45 0.28609323593470193 0.6775497353688215 0.677552224152538 3.6988906591030073
+  hidden translation_46 -0.0043155415367954406 -0.01 0.019452658497731787
+  hidden rotation_46 0.9541424060710529 0.2116742069463097 0.2116749844705147 4.665460195901709
+  translation 0.824068 -0.000111494 0.895976
+  rotation 4.804439091906737e-06 0.9999999981949256 -5.98921221428731e-05 -2.0790811012193946
+  controller "final_project"
+  supervisor TRUE
+  turretSlot [
+    Lab4RobotisLds01 {
+    }
+  ]
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
+CardboardBox {
+  translation 0.207093 0.05 0.950084
+  name "cardboard box(1)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.610317 0.05 0.160351
+  name "cardboard box(3)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.610317 0.05 0.288591
+  name "cardboard box(4)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.677302 0.05 0.347351
+  name "cardboard box(5)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.742259 0.05 0.348969
+  name "cardboard box(6)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.799041 0.05 0.348759
+  name "cardboard box(8)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.613921 0.05 0.34618
+  name "cardboard box(9)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.804968 0.05 0.284997
+  name "cardboard box(10)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.552495 0.05 0.223393
+  name "cardboard box(11)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.423352 0.05 0.219878
+  name "cardboard box(12)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.3604 0.05 0.288563
+  name "cardboard box(16)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.181158 0.05 0.151802
+  name "cardboard box(30)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.209818 0.05 0.68814
+  name "cardboard box(31)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.179303 0.05 0.0849853
+  name "cardboard box(32)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.182641 0.05 0.0232104
+  name "cardboard box(33)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.180055 0.05 0.370521
+  name "cardboard box(34)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.114889 0.05 0.366782
+  name "cardboard box(35)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.0455331 0.05 0.36374
+  name "cardboard box(36)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.208309 0.05 0.75237
+  name "cardboard box(37)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.205399 0.05 0.817652
+  name "cardboard box(38)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.433844 0.05 0.745224
+  name "cardboard box(39)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.499876 0.05 0.743638
+  name "cardboard box(40)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.36202 0.05 0.219746
+  name "cardboard box(41)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.560792 0.05 0.743727
+  name "cardboard box(42)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.364034 0.05 0.47942
+  name "cardboard box(43)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.362152 0.05 0.351712
+  name "cardboard box(44)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.360596 0.05 0.41658
+  name "cardboard box(45)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.821714 0.05 0.745342
+  name "cardboard box(17)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.755769 0.05 0.738645
+  name "cardboard box(18)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.689507 0.05 0.736821
+  name "cardboard box(19)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.628615 0.05 0.735167
+  name "cardboard box(20)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.623658 0.05 0.671027
+  name "cardboard box(21)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.804297 0.05 0.533858
+  name "cardboard box(22)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.486717 0.05 0.223004
+  name "cardboard box(23)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.802967 0.05 0.472696
+  name "cardboard box(24)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.619033 0.05 0.542332
+  name "cardboard box(25)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.617447 0.05 0.479486
+  name "cardboard box(26)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.620421 0.05 0.608575
+  name "cardboard box(27)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.806255 0.05 0.221535
+  name "cardboard box(28)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.615866 0.05 0.41316
+  name "cardboard box(29)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.612027 0.05 0.227036
+  name "cardboard box(13)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.608669 0.05 0.0379666
+  name "cardboard box(14)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.610317 0.05 0.0970853
+  name "cardboard box(15)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.20735 0.05 0.883248
+  name "cardboard box(7)"
+  size 0.06 0.06 0.06
+}
+CardboardBox {
+  translation 0.803412 0.05 0.409456
+  name "cardboard box(2)"
+  size 0.06 0.06 0.06
+}
+RectangleArena {
+  translation 0.5 0 0.5
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "texture/varnished_pine_base_color.jpg"
+      ]
+    }
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.05
+}
+DEF Goal Solid {
+  translation 0.119758 0.0399361 0.267989
+  rotation 0 1 0 -5.307179586466759e-06
+  scale 0.1 0.1 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "texture/goal_mark.png"
+          ]
+          filtering 0
+        }
+        metalness 0
+      }
+      geometry Plane {
+      }
+    }
+  ]
+  name "Goal"
+}

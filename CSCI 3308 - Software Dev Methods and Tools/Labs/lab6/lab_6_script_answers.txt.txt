@@ -1,0 +1,100 @@
+Daniel Kim
+
+sudo -u postgres psql
+password
+\c football_db;
+
+4.1
+CREATE TABLE universityInfo(
+University_Name VARCHAR(40) PRIMARY KEY,
+Date_Established INT NOT NULL,
+Address VARCHAR(40) NOT NULL,
+Student_Population INT NOT NULL,
+Acceptance_Rate DECIMAL NOT NULL);
+
+4.2
+INSERT INTO universityInfo(University_Name, Date_Established, Address, Student_Population, Acceptance_Rate)
+VALUES('CU Boulder', 1876, '1100 28th St, Boulder, CO 80303', 35000, 0.8);
+
+SELECT * FROM universityInfo;
+
+5.1
+SELECT name,major FROM football_players ORDER BY major;
+
+5.2
+SELECT name,rushing_yards FROM football_players WHERE rushing_yards >= 70;
+
+5.3
+select visitor_name, home_score, visitor_score, game_date, players from football_games where visitor_name = 'Nebraska';
+
+5.4
+select visitor_name, home_score, visitor_score, game_date, players from football_games where home_score > visitor_score;
+
+5.5
+select visitor_name, game_date from football_games where game_date > '2018-08-31';
+
+5.6
+select sum (home_score) / cast ( count(*) as float ) as avg from football_games;
+
+5.7
+select major, count(*) as number_of_players from football_players group by major;
+
+5.8 
+select major, count(*) as number_of_players from football_players where major = 'CSCI' group by major;
+
+6.1
+create view winning_games
+as select count(*)
+from football_games where home_score > visitor_score;
+
+6.2
+create view total_games
+as select count(*)
+from football_games;
+
+6.3
+select cast ( (select * from winning_games) as float ) / cast ( (select * from total_games) as float );
+
+7.1
+select count(*) from football_games where (select id from football_players where name = 'Cedric Vega') = any(players);
+
+7.2
+create view totalRushYards
+as select sum(rushing_yards) from football_players where name = 'Cedric Vega';
+
+create view numGames
+as select count(*) from football_games 
+where (select id from football_players where name = 'Cedric Vega') = any(players);
+
+select (select * from totalRushYards) / cast ( (select * from numGames) as float );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

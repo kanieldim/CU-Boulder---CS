@@ -1,0 +1,21 @@
+[info] CompilerTest:
+[info] - simple expression 1
+[info] - simple expression 2
+[info] - simple expression 3
+[info] - simple expression 4
+[info] - LetBinding + Ident Test 1
+[info] - LetBinding + Ident Test 2
+[info] - LetBinding + Ident Test 3
+[info] - LetBinding + Ident Test 4 *** FAILED ***
+[info]   java.lang.AssertionError: assertion failed
+[info]   at scala.Predef$.assert(Predef.scala:208)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateSingleInstruction(StackMachineEmulator.scala:62)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.$anonfun$emulateStackMachine$1(StackMachineEmulator.scala:161)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
+[info]   at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)
+[info]   at scala.collection.immutable.List.foldLeft(List.scala:89)
+[info]   at edu.colorado.csci3155.project1.StackMachineEmulator$.emulateStackMachine(StackMachineEmulator.scala:159)
+[info]   at edu.colorado.csci3155.project1.CompilerTest.$anonfun$new$8(CompilerTest.scala:83)
+[info]   at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+[info]   at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+[info]   ...

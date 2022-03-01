@@ -1,0 +1,374 @@
+Homework #3
+Name: Daniel Kim
+
+
+---------------------------------------- Question 1 Query ---------------------------------------- 
+
+select last_name, first_name from employees where country != 'UK' and hire_date < '2014-04-14' order by last_name asc;
+
+---------------------------------------- Question 1 Results ---------------------------------------- 					
+
+ last_name | first_name 
+-----------+------------
+ Callahan  | Laura
+ Davolio   | Nancy
+ Fuller    | Andrew
+ Leverling | Janet
+ Peacock   | Margaret
+(5 rows)
+
+
+---------------------------------------- Question 2 Query ---------------------------------------- 
+
+select product_id, product_name, quantity_per_unit, units_in_stock, unit_price from products where units_in_stock >= 1 and units_in_stock < reorder_level;
+
+---------------------------------------- Question 2 Results ---------------------------------------- 
+					
+ product_id |       product_name        |  quantity_per_unit  | units_in_stock | unit_price 
+------------+---------------------------+---------------------+----------------+------------
+          2 | Chang                     | 24 - 12 oz bottles  |             17 |         19
+          3 | Aniseed Syrup             | 12 - 550 ml bottles |             13 |         10
+         11 | Queso Cabrales            | 1 kg pkg.           |             22 |         21
+         21 | Sir Rodney's Scones       | 24 pkgs. x 4 pieces |              3 |         10
+         30 | Nord-Ost Matjeshering     | 10 - 200 g glasses  |             10 |      25.89
+         32 | Mascarpone Fabioli        | 24 - 200 g pkgs.    |              9 |         32
+         37 | Gravad lax                | 12 - 500 g pkgs.    |             11 |         26
+         43 | Ipoh Coffee               | 16 - 500 g tins     |             17 |         46
+         45 | Rogede sild               | 1k pkg.             |              5 |        9.5
+         48 | Chocolade                 | 10 pkgs.            |             15 |      12.75
+         49 | Maxilaku                  | 24 - 50 g pkgs.     |             10 |         20
+         56 | Gnocchi di nonna Alice    | 24 - 250 g pkgs.    |             21 |         38
+         64 | Wimmers gute Semmelknödel | 20 bags x 4 pieces  |             22 |      33.25
+         66 | Louisiana Hot Spiced Okra | 24 - 8 oz jars      |              4 |         17
+         68 | Scottish Longbreads       | 10 boxes x 8 pieces |              6 |       12.5
+         70 | Outback Lager             | 24 - 355 ml bottles |             15 |         15
+         74 | Longlife Tofu             | 5 kg pkg.           |              4 |         10
+(17 rows)
+
+
+---------------------------------------- Question 3 Query ---------------------------------------- 
+
+select product_name, unit_price from products where unit_price = ( select min( unit_price ) from products );
+
+---------------------------------------- Question 3 Results ---------------------------------------- 		
+
+ product_name | unit_price 
+--------------+------------
+ Geitost      |        2.5
+
+
+---------------------------------------- Question 4 Query ---------------------------------------- 
+
+select product_id, product_name, units_in_stock * unit_price as Total_Inventory from products where units_in_stock * unit_price < 200 order by total;
+
+---------------------------------------- Question 4 Results ---------------------------------------- 	
+				
+ product_id |       product_name        | total_inventory  
+------------+---------------------------+------------------
+         29 | Thüringer Rostbratwurst   |                0
+          5 | Chef Anton's Gumbo Mix    |                0
+         53 | Perth Pasties             |                0
+         17 | Alice Mutton              |                0
+         31 | Gorgonzola Telino         |                0
+         21 | Sir Rodney's Scones       |               30
+         74 | Longlife Tofu             |               40
+         45 | Rogede sild               |             47.5
+         66 | Louisiana Hot Spiced Okra |               68
+         68 | Scottish Longbreads       |               75
+         24 | Guaraná Fantástica        |               90
+          3 | Aniseed Syrup             |              130
+         13 | Konbu                     |              144
+         54 | Tourtière                 | 156.449995994568
+         48 | Chocolade                 |           191.25
+(15 rows)
+
+---------------------------------------- Question 5 Query ---------------------------------------- 
+
+select ship_country, count( order_id ) as orders from orders where ship_country != 'USA' and order_date > '1996-07-31' and order_date < '1996-09-01' group by ship_country;
+
+---------------------------------------- Question 5 Results ---------------------------------------- 					
+
+ ship_country | orders 
+--------------+--------
+ Spain        |      2
+ Mexico       |      2
+ Brazil       |      4
+ UK           |      1
+ Italy        |      2
+ Venezuela    |      1
+ Germany      |      6
+ Finland      |      1
+ Sweden       |      2
+ France       |      1
+(10 rows)
+
+
+---------------------------------------- Question 6 Query ---------------------------------------- 
+
+select customer_id, count( order_id ) as orders from orders group by customer_id having count( order_id ) < 4 order by customer_id desc;
+
+---------------------------------------- Question 6 Results ---------------------------------------- 		 
+
+ customer_id | orders 
+-------------+--------
+ TRAIH       |      3
+ THECR       |      3
+ NORTS       |      3
+ LAZYK       |      2
+ LAUGB       |      3
+ GROSR       |      2
+ FRANR       |      3
+ CONSH       |      3
+ CENTC       |      1
+ BOLID       |      3
+(10 rows)
+
+
+---------------------------------------- Question 7 Query ---------------------------------------- 
+
+select supplier_id, sum( units_in_stock * unit_price ) as total from products group by supplier_id having count( distinct product_name ) > 3;
+
+---------------------------------------- Question 7 Results ---------------------------------------- 
+					
+ supplier_id |      total       
+-------------+------------------
+           2 |  2833.7999420166
+           7 | 4409.65005874634
+           8 | 4276.99999523163
+          12 | 3301.84996032715
+(4 rows)
+
+
+---------------------------------------- Question 8 Query ---------------------------------------- 
+
+select company_name, product_name, unit_price from suppliers inner join products on suppliers.supplier_id = products.supplier_id where suppliers.country = 'France' order by unit_price desc;
+
+---------------------------------------- Question 8 Results ---------------------------------------- 
+					
+        company_name        |      product_name      | unit_price 
+----------------------------+------------------------+------------
+ Aux joyeux ecclésiastiques | Côte de Blaye          |      263.5
+ Gai pâturage               | Raclette Courdavault   |         55
+ Gai pâturage               | Camembert Pierrot      |         34
+ Aux joyeux ecclésiastiques | Chartreuse verte       |         18
+ Escargots Nouveaux         | Escargots de Bourgogne |      13.25
+(5 rows)
+
+
+---------------------------------------- Question 9 Query ---------------------------------------- 
+
+select last_name, first_name, title, extension, count( order_id ) as orders from employees inner join orders on orders.employee_id = employees.employee_id group by last_name, first_name, title, extension having count( order_id ) < 75;
+
+---------------------------------------- Question 9 Results ---------------------------------------- 					
+
+ last_name | first_name |        title         | extension | orders 
+-----------+------------+----------------------+-----------+--------
+ Suyama    | Michael    | Sales Representative | 428       |     67
+ Buchanan  | Steven     | Sales Manager        | 3453      |     42
+ King      | Robert     | Sales Representative | 465       |     72
+ Dodsworth | Anne       | Sales Representative | 452       |     43
+(4 rows)
+
+
+---------------------------------------- Question 10 Query ---------------------------------------- 
+
+create table top_items(
+    item_id integer not null primary key,
+    item_code integer not null,
+    item_name varchar(40) not null,
+    inventory_date date not null,
+    supplier_id integer not null,
+    item_quantity integer not null,
+    item_price decimal(9,2) not null
+);
+	
+---------------------------------------- Question 11 Query ---------------------------------------- 
+
+insert into top_items(item_id, item_code, item_name, inventory_date, supplier_id, item_quantity, item_price) select product_id, category_id, product_name, current_date, units_in_stock, unit_price, supplier_id from products where (unit_price * units_in_stock) > 2500;
+
+---------------------------------------- Question 12 Query ---------------------------------------- 
+
+delete from top_items where item_quantity < 50;
+
+---------------------------------------- Question 13 Query ---------------------------------------- 
+
+alter table top_items add inventory_value decimal(9,2) not null default 0;
+
+---------------------------------------- Question 14 Query ---------------------------------------- 
+
+update top_items set inventory_value = item_price * item_quantity;
+
+---------------------------------------- Question 15 Query ---------------------------------------- 
+
+drop table top_items;
+
+---------------------------------------- Question 16 Query ---------------------------------------- 
+
+select first_name,last_name, count(distinct customer_id) as customers from employees inner join orders on orders.employee_id = employees.employee_id group by first_name, last_name having count(distinct customer_id) >= 50 order by customers desc;
+
+---------------------------------------- Question 16 Results ---------------------------------------- 					
+
+ first_name | last_name | customers 
+------------+-----------+-----------
+ Margaret   | Peacock   |        75
+ Nancy      | Davolio   |        65
+ Janet      | Leverling |        63
+ Andrew     | Fuller    |        59
+ Laura      | Callahan  |        56
+(5 rows)
+
+
+---------------------------------------- Question 17 Query ---------------------------------------- 
+
+select product_name from products where unit_price < ( select avg( unit_price ) from products );
+
+---------------------------------------- Question 17 Results ---------------------------------------- 					
+
+           product_name           
+----------------------------------
+ Chai
+ Chang
+ Aniseed Syrup
+ Chef Anton's Cajun Seasoning
+ Chef Anton's Gumbo Mix
+ Grandma's Boysenberry Spread
+ Queso Cabrales
+ Konbu
+ Tofu
+ Genen Shouyu
+ Pavlova
+ Teatime Chocolate Biscuits
+ Sir Rodney's Scones
+ Gustaf's Knäckebröd
+ Tunnbröd
+ Guaraná Fantástica
+ NuNuCa Nuß-Nougat-Creme
+ Nord-Ost Matjeshering
+ Gorgonzola Telino
+ Geitost
+ Sasquatch Ale
+ Steeleye Stout
+ Inlagd Sill
+ Gravad lax
+ Chartreuse verte
+ Boston Crab Meat
+ Jack's New England Clam Chowder
+ Singaporean Hokkien Fried Mee
+ Gula Malacca
+ Rogede sild
+ Spegesild
+ Zaanse koeken
+ Chocolade
+ Maxilaku
+ Valkoinen suklaa
+ Filo Mix
+ Tourtière
+ Pâté chinois
+ Ravioli Angelo
+ Escargots de Bourgogne
+ Sirop d'érable
+ Louisiana Fiery Hot Pepper Sauce
+ Louisiana Hot Spiced Okra
+ Laughing Lumberjack Lager
+ Scottish Longbreads
+ Outback Lager
+ Flotemysost
+ Röd Kaviar
+ Longlife Tofu
+ Rhönbräu Klosterbier
+ Lakkalikööri
+ Original Frankfurter grüne Soße
+(52 rows)
+
+
+---------------------------------------- Question 18 Query ---------------------------------------- 
+
+select count( distinct employees ) from employees right join orders on employees.employee_id = orders. employee_id where ship_address != address and employees.city = orders.ship_city;
+
+---------------------------------------- Question 18 Results ---------------------------------------- 					
+
+ count 
+-------
+     6
+(1 row)
+
+
+---------------------------------------- Question 19 Query ---------------------------------------- 
+
+select first_name, last_name, count( distinct customer_id ) as unique, count( order_id ) as order_count from employees inner join orders on orders.employee_id = employees.employee_id where order_date >= '1998-01-01' and order_date <='1998-12-31' group by first_name, last_name;
+
+---------------------------------------- Question 19 Results ---------------------------------------- 					
+
+ first_name | last_name | unique | order_count 
+------------+-----------+--------+-------------
+ Andrew     | Fuller    |     34 |          39
+ Anne       | Dodsworth |     16 |          19
+ Janet      | Leverling |     30 |          38
+ Laura      | Callahan  |     23 |          31
+ Margaret   | Peacock   |     33 |          44
+ Michael    | Suyama    |     17 |          19
+ Nancy      | Davolio   |     32 |          42
+ Robert     | King      |     21 |          25
+ Steven     | Buchanan  |     11 |          13
+(9 rows)
+
+
+---------------------------------------- Question 20 Query ---------------------------------------- 
+
+select count( order_id ) from orders where ship_country = 'Sweden' and (shipped_date - 7) < order_date;
+
+---------------------------------------- Question 20 Results ---------------------------------------- 					
+
+ count 
+-------
+    11
+(1 row)
+	
+
+---------------------------------------- Question 21 Query ---------------------------------------- 
+
+select product_name from suppliers inner join products on suppliers.supplier_id = products.supplier_id where company_name = 'Leka Trading';
+
+---------------------------------------- Question 21 Results ---------------------------------------- 	
+				
+         product_name          
+-------------------------------
+ Singaporean Hokkien Fried Mee
+ Ipoh Coffee
+ Gula Malacca
+(3 rows)
+
+
+---------------------------------------- Question Bonus 1 Query ---------------------------------------- 
+
+select first_name, last_name, count( distinct customer_id ) as unique, count( orders ) as order_count from employees inner join orders on orders.employee_id = employees.employee_id group by first_name, last_name having count( distinct customer_id ) > 50 or count( orders ) > 70 order by order_count desc;
+
+---------------------------------------- Question Bonus 1 Results ---------------------------------------- 
+
+ first_name | last_name | unique | order_count 
+------------+-----------+--------+-------------
+ Margaret   | Peacock   |     75 |         156
+ Janet      | Leverling |     63 |         127
+ Nancy      | Davolio   |     65 |         123
+ Laura      | Callahan  |     56 |         104
+ Andrew     | Fuller    |     59 |          96
+ Robert     | King      |     45 |          72
+(6 rows)
+
+
+---------------------------------------- Question Bonus 2 Query ---------------------------------------- 
+
+select company_name, avg( unit_price ) as average_price from products inner join suppliers on products.supplier_id = suppliers.supplier_id group by company_name, country having country = 'USA';
+
+---------------------------------------- Question Bonus 2 Results ---------------------------------------- 
+
+        company_name         |  average_price   
+-----------------------------+------------------
+ Bigfoot Breweries           | 15.3333333333333
+ Grandma Kelly's Homestead   | 31.6666666666667
+ New England Seafood Cannery | 14.0249996185303
+ New Orleans Cajun Delights  | 20.3499999046326
+(4 rows)
+
+
+
